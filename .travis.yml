@@ -1,0 +1,25 @@
+jobs:
+  include:
+    - os: osx
+      language: python
+      arch: amd64
+      script:
+        - python hello_world.py
+    - os: linux
+      language: python
+      dist: xenial
+      arch: amd64
+      script:
+        - python hello_world.py
+    - os: linux
+      language: python
+      dist: bionic
+      arch: amd64
+      script:
+        - python hello_world.py
+    - os: linux
+      language: python
+      dist: focal
+      arch: amd64
+      script:
+        - python hello_world.py
